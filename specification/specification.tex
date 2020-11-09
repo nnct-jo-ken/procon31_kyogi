@@ -45,21 +45,21 @@
         \begin{itemize}
             \item 定数
             \begin{enumerate}
-                \item width $\cdots$ 
-                \item height $\cdots$ ボードの高さ(12 - 24)
-                \item agentNum $\cdots$ 各チームのエージェント数(6 - 14)
-                \item fieldInfo $\cdots$ 盤面の地形情報 (自陣地, 自城壁, 中立, 敵陣地, 敵城壁)
-                \item fieldPoint $\cdots$ 盤面の点数情報 (-16 - 16)
-                \item agent $\cdots$ 盤面のエージェント情報
-                \item Score $\cdots$ 両チームの得点情報
-                \item agentCommand $\cdots$ エージェントの行動情報
+                \item NEUTRAL (0) $\cdots$ 中立(属性情報)
+                \item Wall1 (1) $\cdots$ 自陣(属性情報)
+                \item POS1 (2) $\cdots$ 自城壁(属性情報)
+                \item Wall2 (3) $\cdots$ 敵陣(属性情報)
+                \item POS2 (4) $\cdots$ 敵城壁(属性情報)
+                \item AGENT1 (1) $\cdots$ 自エージェント
+                \item AGENT2 (2) $\cdots$ 敵エージェント
+                \item NO\_AGENT (0) $\cdots$ エージェントがいない
             \end{enumerate}
             \item メンバ変数
             \begin{enumerate}
                 \item width $\cdots$ ボードの幅(12 - 24)
                 \item height $\cdots$ ボードの高さ(12 - 24)
                 \item agentNum $\cdots$ 各チームのエージェント数(6 - 14)
-                \item fieldInfo $\cdots$ 盤面の地形情報 (自陣地, 自城壁, 中立, 敵陣地, 敵城壁)
+                \item fieldInfo $\cdots$ 盤面の属性情報 (自陣地, 自城壁, 中立, 敵陣地, 敵城壁)
                 \item fieldPoint $\cdots$ 盤面の点数情報 (-16 - 16)
                 \item agent $\cdots$ 盤面のエージェント情報
                 \item Score $\cdots$ 両チームの得点情報
