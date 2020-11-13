@@ -11,12 +11,25 @@ NO_AGENT = 0
 
 class board():
     def __init__(self, width, height, agentNum):
-        self.width = width
-        self.height = height
-        self.agentNum = agentNum
-        self.fieldInfo = np.empty((width, height), dtype=np.int)
-        self.fieldPoint = np.empty((width, height), dtype=np.int)
-        self.fieldAgent = np.empty((width, height), dtype=np.int)
-        self.scores = [0, 0]
+        pass
 
-    
+    def initField(self):
+        pass
+
+    def getField(self):
+        pass
+
+    def printField(self):
+        pass
+
+    def setCommand(self, command):
+        pass
+
+    def updateAgents(self):
+        pass
+
+    def setAbility(self, width, height, ability):
+        pass
+
+    def judgeSurrounded(self):
+        pass
